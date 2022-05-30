@@ -1,0 +1,15 @@
+CREATE TABLE uid_enrolments_detail(
+  registrar string, 
+  enrolment_agency string, 
+  state string, 
+  district string, 
+  sub_district string, 
+  pin_code bigint, 
+  gender string, 
+  age int, 
+  aadhaar_generated int, 
+  enrolment_rejected int, 
+  residents_providing_email int, 
+  residents_providing_mobile_number int)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' 
+TBLPROPERTIES ('skip.header.line.count'='1');
